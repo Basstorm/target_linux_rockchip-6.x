@@ -1,0 +1,12 @@
+
+. /lib/functions/leds.sh
+. /lib/functions/uci-defaults.sh
+
+board=$(board_name)
+boardname="${board##*,}"
+
+board_config_update
+
+board_config_flush
+
+exit 0
